@@ -9,7 +9,7 @@ public class SecondMax {
 	
 	public void numInput(){
 		for(int i=1;i<=10;i++){
-			System.out.print(i+"번째 수를 입력하시오. ");
+			System.out.print(i+"번째 수를 입력하시오. : ");
 			numArray[i-1] = input.nextInt();
 		}
 	}
