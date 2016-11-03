@@ -9,7 +9,7 @@ public class SecondMax {
 	
 	public void numInput(){
 		for(int i=1;i<=10;i++){
-			System.out.print(i+"번째 수를 입력하시오");
+			System.out.print(i+"번째 수를 입력하시오. ");
 			numArray[i-1] = input.nextInt();
 		}
 	}
@@ -18,13 +18,13 @@ public class SecondMax {
 		int firstMax = 0;
 		int secondMax = 0;
 		for(int j=1;j<=10;j++){
-			firstMax=Math.max(numArray[i], numArray[i-0]);
+			firstMax=Math.max(numArray[j], numArray[j-1]);
 		}
 		for(int j=1;j<=10;j++){
-			if(firstMax == secondMax){
+			if(firstMax == numArray[j] && firstMax == numArray[j-1]){
 				break;
 			}
-			secondMax=Math.max(numArray[j], numArray[j-0]);
+			secondMax=Math.max(numArray[j], numArray[j-1]);
 		}
 		}
 	public void init(){
