@@ -3,10 +3,10 @@ package homework6;
 import java.util.Scanner;
 
 public class AvgScore {
-	double finalavg = 0;
-	double avgsum;
-	double worstscore = 0;
-	double bestscore = 0;
+	private double finalavg = 0;
+	private double avgsum;
+	private double worstscore = 0;
+	private double bestscore = 0;
 	
 	private double[] numArray = new double[10];
 	private Scanner input = new Scanner(System.in);
@@ -39,5 +39,9 @@ public class AvgScore {
 		finalavg = (avgsum - (worstscore + bestscore))/8;
 		System.out.print("가장 큰 점수와 작은 점수를 제외한 8개의 점수 평균은 "+finalavg+""
 				+ "입니다.");
+	}
+	
+	public void init(){
+		
 	}
 }
