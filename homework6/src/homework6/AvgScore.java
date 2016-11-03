@@ -42,6 +42,11 @@ public class AvgScore {
 	}
 	
 	public void init(){
+		System.out.println("가장 큰 점수와 가장 적은 점수를 제외한 점수의 평균 구하기");
+		numInput();
+		bestScore();
+		worstScore();
+		finalAvg();
 		
 	}
 }

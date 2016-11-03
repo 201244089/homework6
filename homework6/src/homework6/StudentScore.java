@@ -27,16 +27,16 @@ public class StudentScore {
 	}}}
 	
 	public void scoreSumAvg(){
-		for(int j=0;j<3;j++){
-			for(int i=0;i<5;i++){
-				if(j==0){
-					korsum+=score[j][i];
+		for(int i=0;i<3;i++){
+			for(int j=0;j<5;j++){
+				if(i==0){
+					korsum+=score[i][j];
 				}
-				if(j==1){
-					engsum+=score[j][i];
+				if(i==1){
+					engsum+=score[i][j];
 				}
-				if(j==2){
-					mathsum+=score[j][i];
+				if(i==2){
+					mathsum+=score[i][j];
 	}}}
 		koravg = korsum/5;
 		engavg = engsum/5;
@@ -92,6 +92,7 @@ public class StudentScore {
 	}
 	
 	public void init(){
+		System.out.println("5명의 국어, 영어, 수학 점수의 과목별총점 및 평균 구하기");
 		scoreInput();
 		scoreSumAvg();
 		studentSumAvg();

@@ -28,6 +28,7 @@ public class SecondMax {
 		}
 		}
 	public void init(){
+		System.out.println("10개의 숫자를 입력받아 배열에 저장하고 두번째로 큰 수를 출력하라");
 		numInput();
 		secondMaxChoose();
 	}
